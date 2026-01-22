@@ -309,7 +309,7 @@ with main_container:
             # Find similar people in dataset
             similar_people = df[
                 (df['BMI'].between(persona['stats']['BMI']-2, persona['stats']['BMI']+2)) &
-                (df['Age'].between(40, 50 if persona['id'] == 'maria' else 55, 65))
+                (df['Age'].between(40, 50) if persona['id'] == 'maria' else df['Age'].between(55, 65))
             ]
             
             col1, col2, col3 = st.columns(3)
