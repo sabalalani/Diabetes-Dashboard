@@ -1,17 +1,7 @@
 🏥 Diabetes Health Indicators Dashboard
-<div align="center">
-https://img.shields.io/badge/Streamlit-1.28+-red
-https://img.shields.io/badge/Python-3.8+-blue
-https://img.shields.io/badge/License-MIT-green
-https://img.shields.io/badge/PRs-welcome-brightgreen
 
-An interactive dashboard for analyzing diabetes risk factors using BRFSS 2015 data
-
-Live Demo • Installation • Features • Documentation
-
-</div>
 📸 Preview
-<div align="center">
+
 Dashboard Interface
 https://via.placeholder.com/800x450/1E3A8A/FFFFFF?text=Diabetes+Health+Indicators+Dashboard
 
