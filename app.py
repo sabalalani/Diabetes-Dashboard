@@ -222,7 +222,6 @@ elif page == "👥 Meet the People":
             <p><strong>Her Story:</strong> Between her office job and evening shifts at the restaurant, 
             Maria finds little time for exercise. Affordable healthy food is hard to find in her 
             neighborhood, and her family history of diabetes keeps her worried.</p>
-            
             <p><strong>Key Stats:</strong> BMI 31, High BP, Income level 3/8</p>
         </div>
         """, unsafe_allow_html=True)
