@@ -142,7 +142,6 @@ if page == "📚 Introduction":
         <h3>Welcome to the Data Storybook</h3>
         <p>This interactive dashboard tells the stories behind 70,000+ health records 
         from the 2015 BRFSS survey. Each data point represents a person's health journey.</p>
-        
         <div class="insight-box">
             <strong>Our Mission:</strong> To transform health statistics into 
             meaningful narratives that can inform, educate, and inspire change.
