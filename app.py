@@ -102,7 +102,7 @@ st.markdown("""
 # Load data
 @st.cache_data
 def load_data():
-    df = pd.read_csv('diabetes_012_health_indicators_BRFSS2015.csv')
+    df = pd.read_csv('data/diabetes_012_health_indicators_BRFSS2015.csv')
     
     # Create storytelling columns
     df['Diabetes_Story'] = df['Diabetes_012'].map({
