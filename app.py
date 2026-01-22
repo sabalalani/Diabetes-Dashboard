@@ -268,7 +268,6 @@ elif page == "👥 Meet the People":
             <p><strong>His Story:</strong> James loves cooking traditional family recipes, 
             but they're high in carbs. Since his diagnosis 5 years ago, he's been learning 
             to adapt his favorite dishes while managing medication and regular check-ups.</p>
-            
             <p><strong>Key Stats:</strong> BMI 28, High Cholesterol, College educated</p>
         </div>
         """, unsafe_allow_html=True)
@@ -282,7 +281,6 @@ elif page == "👥 Meet the People":
             <p><strong>Her Story:</strong> Sophia prioritizes health with regular gym sessions 
             and meal prep. Despite her healthy habits, her family history of diabetes keeps 
             her vigilant about regular check-ups and maintaining a balanced lifestyle.</p>
-            
             <p><strong>Key Stats:</strong> BMI 23, Physically Active, High Income</p>
         </div>
         """, unsafe_allow_html=True)
