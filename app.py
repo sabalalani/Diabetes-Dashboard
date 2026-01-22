@@ -314,16 +314,31 @@ with main_container:
             
             col1, col2, col3 = st.columns(3)
             
-            with col1:
-                similar_diabetes = similar_people['Diabetes_012'].value_counts(normalize=True) * 100
-                fig = px.pie(
-                    values=similar_diabetes.values,
-                    names=['No Diabetes', 'Prediabetes', 'Diabetes'],
-                    title=f"Diabetes Status of Similar People",
-                    color_discrete_sequence=['#2E86AB', '#F18F01', '#A23B72']
-                )
-                st.plotly_chart(fig, use_container_width=True)
-            
+           with col1:
+                if len(similar_people) > 0:
+                    similar_diabetes = similar_people['Diabetes_012'].value_counts(normalize=True) * 100
+                    
+                    # Create labels for all possible categories
+                    all_categories = [0, 1, 2]
+                    labels = ['No Diabetes', 'Prediabetes', 'Diabetes']
+                    
+                    # Initialize values for all categories
+                    values = []
+                    for category in all_categories:
+                        if category in similar_diabetes.index:
+                            values.append(similar_diabetes[category])
+                        else:
+                            values.append(0)
+                    
+                    fig = px.pie(
+                        values=values,
+                        names=labels,
+                        title=f"Diabetes Status of Similar People",
+                        color_discrete_sequence=['#2E86AB', '#F18F01', '#A23B72']
+                    )
+                    st.plotly_chart(fig, use_container_width=True)
+                else:
+                    st.info("No similar profiles found in the dataset.")
             with col2:
                 st.metric("Average BMI", f"{similar_people['BMI'].mean():.1f}")
                 st.metric("High BP Rate", f"{similar_people['HighBP'].mean()*100:.1f}%")
