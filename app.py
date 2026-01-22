@@ -43,7 +43,7 @@ st.markdown("""
 # Load data
 @st.cache_data
 def load_data():
-    df = pd.read_csv('diabetes_012_health_indicators_BRFSS2015.csv')
+    df = pd.read_csv('data/diabetes_012_health_indicators_BRFSS2015.csv')
     
     # Create derived columns
     df['Diabetes_Status'] = df['Diabetes_012'].map({0: 'No Diabetes', 1: 'Prediabetes', 2: 'Diabetes'})
