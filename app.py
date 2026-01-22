@@ -73,7 +73,7 @@ st.markdown("""
 @st.cache_data
 def load_data():
     try:
-        df = pd.read_csv('diabetes_012_health_indicators_BRFSS2015.csv')
+        df = pd.read_csv('data/diabetes_012_health_indicators_BRFSS2015.csv')
     except FileNotFoundError:
         st.error("Data file not found. Please upload 'diabetes_012_health_indicators_BRFSS2015.csv'")
         return pd.DataFrame()
