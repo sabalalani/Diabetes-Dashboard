@@ -3,7 +3,7 @@
 📸 Preview
 
 Dashboard Interface
-https://via.placeholder.com/800x450/1E3A8A/FFFFFF?text=Diabetes+Health+Indicators+Dashboard
+https://diabetes-dashboard25.streamlit.app
 
 </div>
 🌟 Features
